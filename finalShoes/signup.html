@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">  
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <form class="signup_form">
+        <h1>Sign Up</h1>
+        <h2>Please fill the following fields so you can sign up</h2>
+        
+        <div class="signup_inputs">
+            <label >First name</label>
+            <input class="signup_input" type="text" name="firstname" placeholder="firstname...">
+        </div>
+
+        <div class="signup_inputs">
+            <label >Last name</label>
+            <input type="text" class="signup_input" name="lasttname" placeholder="lastname...">
+        </div>
+
+        <div class="signup_inputs">
+            <label >email</label>
+            <input class="signup_input" type="email" name="email" placeholder="email...">
+        </div>
+
+        <div class="signup_inputs">
+            <label for="password">Password</label>
+            <input class="signup_input" type="password" name="password" placeholder="password">
+        </div>
+
+        <div class="signup_inputs">
+            <label for="gender">Gender</label>
+            <div class="radios_div">
+                <input type="radio" name="gender" value="male"/> male
+                <input  type="radio" name="gender" value="female"/> female
+            </div>
+        </div>
+        <button class="signup_btn">Sign Up</button>
+    </form> 
+</body>
+</html>
