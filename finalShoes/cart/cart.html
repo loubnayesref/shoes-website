@@ -1,58 +1,95 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-    <link rel="stylesheet" href="cart.css">
-</head>
-<body>
-    <!--menu list-->
-        <ul class="menu">
-                <li class="menu_item"><a href="../index.html">Home</a>
-                </li>
-                <li class="menu_item">About</li>
-                <li><a href="./cart/cart.html" target="_blank">Cart</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
-        </ul>
-    <!--form-->
-        <div class="cart_wrapper">
-            <div class="cart_info">
-                <form class="client_info">
-                    <h1>Client Information</h1>
-                    <div class="cart_info_inputs">
-                        <div class="cart_info_input">
-                            <label class="cart_label" for="firstname">First Name</label>
-                            <input type="text" name="firstname" placeholder="enter your first name....">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cart</title>
+        <meta name="description" content="web page that sells sport shoes">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="./cart.css">
+    </head>
+    <body>
+                <!--menu list-->
+                <ul class="menu">
+                    <li><a  href="../index.html">Home</a></li>
+                    <li><a  href="#">About</a></li>
+                    <li><a  href="#">Categories</a></li>
+                    <li><a  href="#">Top Products</a></li>
+                </ul>
+                <div class="cart_wrapper">
+                    <div class="cart_info">
+                        <form class="client_info">
+                            <h1 class="cart_h1">Client Information</h1>
+                            <div class="cart_info_inputs">
+                                <div class="cart_info_input">
+                                    <label class="cart_label" to="firstname">Firstname</label>
+                                    <input  type="text" name="firstname"/>
+                                </div>
+                                <div class="cart_info_input">
+                                    <label class="cart_label" to="Lastname">Lastname</label>
+                                    <input  type="text" name="lastname"/>
+                                </div>
+                            </div>
+                            <div class="cart_info_inputs">
+                                <div class="cart_info_input">
+                                    <label class="cart_label" to="email">Email</label>
+                                    <input  type="email" name="email"/>
+                                </div>
+                                <div class="cart_info_input">
+                                    <label class="cart_label" to="phone">Phone Number</label>
+                                    <input  type="text" name="phone"/>
+                                </div>
+                            </div>
+                            <div class="cart_info_inputs">
+                                <div class="cart_info_input">
+                                    <label class="cart_label" to="city">City</label>
+                                    <select class="cart_info_select">
+                                        <option>Algies</option>
+                                        <option>Oran</option>
+                                    </select>
+                                </div>
+                                <div class="cart_info_input">
+                                    <label class="cart_label" to="address">Address</label>
+                                    <input type="text" name="address"/>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="productinfo">
+                            <h1 class="cart_h1">Product Information </h1>
+                            <table class="cart_table">
+                                <tr class="cart_table_head">
+                                    <th>Product</th>
+                                    <th>Title</th>
+                                    <th>quantity</th>
+                                    <th>Price</th>
+                                    <th>Total Price</th>
+                                </tr>
+                                <tfoot>
+                                    <td colspan="4">Total:</td>
+                                    <td class="totalpay"></td>
+                                </tfoot>
+                                
+                                
+                            </table>
+                            
                         </div>
-                        <div class="cart_info_input">
-                            <label class="cart_label" for="lastname">Last Name</label>
-                            <input type="text" name="lastname" placeholder="enter your last name...">
-                        </div>
+
                     </div>
-                    <div class="cart_info_inputs">
-                        <div class="cart_info_input">
-                            <label class="cart_label" for="email">Email</label>
-                            <input type="email" name="email" placeholder="enter your email...">
+                    <div class="cart_summary">
+                        <h1 class="cart_h1">Order Summary</h1>
+                        <form>
+                            <label class="cart_label">Promo code</label>
+                            <div class="cart_summary_input">
+                                <input type="text" name="promo" id="promocode"/>
+                                <button class="promo_btn">Apply</button>
+                            </div>
+                        </form>
+                        <div class="productinfo_cost">
+                            <h3>Product Cost</h3>
+                            <p id="costbefore"></p>
                         </div>
-                        <div class="cart_info_input">
-                            <label class="cart_label" for="password">password</label>
-                            <input type="password" name="password" placeholder="enter your password...">
-                        </div>
+                        <button class="confirm_btn">Confirm Order</button>
+
                     </div>
-                    <div class="cart_info_inputs">
-                        <div class="cart_info_input">
-                            <label class="cart_label" for="Address">City</label>
-                            <select name="city" class="cart_select">
-                                <option>Algiers</option>
-                                <option>oran</option>
-                            </select>
-                        </div>
-                        <div class="cart_info_input">
-                            <label class="cart_label" for="city">Address</label>
-                            <input type="City" name="city" placeholder="enter your email...">
-                        </div>
-                        
-                    </div>
-                </form>
-</body>
+                </div>
+                <script src="cart.js"></script>
+    </body>
 </html>
